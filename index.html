@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Always on top</title>
+
+  </head>
+  <body>
+    <div id="browser-tools" style="display: flex; width:100vw">
+      <div id="button-container">
+        <button id="forward-button">Forward</button>
+        <button id="back-button">Back</button>
+        <button id="reload-button">Reload</button>
+        <button id="search-button">Search</button>
+        <button id="new-window-button">new window</button>
+      </div>
+      <form><input id="url-input" required></form>
+      <button id="go-button">go</button>
+    </div>
+    <webview id="webview" src="https://www.google.com" style="width:100vw; height:100vh"></webview>
+    <script type="module" src="/src/renderer.js"></script>
+  </body>
+</html>
